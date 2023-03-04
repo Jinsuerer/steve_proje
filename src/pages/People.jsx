@@ -1,4 +1,4 @@
-import Div from "../components/nav/styles/People.styled"
+import Div from "../styles/People.styled"
 
 const People = () => {
   return (

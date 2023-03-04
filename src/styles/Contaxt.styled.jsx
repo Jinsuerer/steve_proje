@@ -1,11 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Div = styled.div`
-  background-color: darkkhaki;
+  background-color: tomato;
   width: 100%;
   height: calc(100vh -140px);
 `;
 
 export default Div;
-
-

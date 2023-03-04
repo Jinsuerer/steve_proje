@@ -1,4 +1,5 @@
-import { Div } from "../nav/Nav.styled"
+import { Div } from "./Footer.styled"
+
 
 
 const Footer = () => {

@@ -1,9 +1,8 @@
-import Div from "../components/nav/styles/NotFound.styled"
 
 
 const NotFound = () => {
   return (
-    <Div>NotFound</Div>
+    <div>NotFound</div>
   )
 }
 

@@ -1,9 +1,11 @@
-import Div from "../components/nav/styles/Contaxt.styled"
+import Div from "../styles/Contaxt.styled"
 
 
 const Contact = () => {
   return (
-    <Div>Contact</Div>
+    <Div>
+
+    </Div>
   )
 }
 

@@ -1,12 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
 import People from "./pages/People";
+import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Nav from "./components/nav/Nav";
-import Footer from "./components/footer/Footer";
+
+import PrivateRouter from "./pages/PrivateRouter";
 
 function App() {
   return (
@@ -14,10 +16,11 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/people" element={<People />} />
+        <Route path="/people" element={ <PrivateRouter/>} />
+        <Route path="" element={<People />}></Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/#" element={<NotFound />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
